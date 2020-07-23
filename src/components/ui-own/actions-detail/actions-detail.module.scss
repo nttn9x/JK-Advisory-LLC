@@ -1,0 +1,29 @@
+@import "styles/base/main.scss";
+@import "styles/modules/list.scss";
+
+.label {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: $border-radius-component;
+  height: 33px;
+}
+
+.actions--blocking {
+  justify-content: center;
+  span {
+    color: #ffffff;
+  }
+}
+
+.form {
+  padding-top: $gutter-component;
+}
+
+.divider {
+  height: 28px;
+}

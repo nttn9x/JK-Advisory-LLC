@@ -1,0 +1,20 @@
+@import "styles/base/main";
+@import "styles/base/animation/attention_seekers/tada.scss";
+
+.loading {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: $gutter-container 0;
+
+  &_title {
+    padding-top: $gutter-container;
+    animation-name: tada;
+    animation-duration: 1.8s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+}

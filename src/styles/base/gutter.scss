@@ -1,0 +1,9 @@
+$gutter: 0.5;
+
+$gutter-base: #{$gutter}em;
+$gutter-double-base: #{$gutter * 2}em;
+$gutter-tripple-base: #{$gutter * 3}em;
+
+$gutter-text: $gutter-base;
+$gutter-component: $gutter-double-base;
+$gutter-container: $gutter-tripple-base;
