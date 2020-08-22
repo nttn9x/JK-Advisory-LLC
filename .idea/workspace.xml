@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aadcf3d9-1ff9-48c3-b215-911a020f5950" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment-data.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.hook.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price-data.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.hook.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.fcdf6f299116d1921e71e0dd0fec0b97.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/0.9b609bb3.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/0.9b609bb3.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/1.e4337491.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/1.e4337491.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/1.e4337491.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/10.d7805392.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/10.d7805392.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/11.638a9b94.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/11.638a9b94.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/4.31adeeb7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/4.31adeeb7.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/4.31adeeb7.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/5.1bc4b38e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/5.1bc4b38e.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/6.eb43ac57.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/6.eb43ac57.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/7.6569a2b7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/7.6569a2b7.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/8.def8bdfc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/8.def8bdfc.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/8.def8bdfc.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/9.aeccb83c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/9.aeccb83c.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.516adb00.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.516adb00.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.0817ad60.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.0817ad60.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/en.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.atom.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.atom.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/third-party-risk.atom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/third-party-risk.atom.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/supplier.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/supplier.service.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +11,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="Test" />
+                    <option name="lastUsedInstant" value="1598066473" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1598066472" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -74,6 +57,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/private/third-party-risk" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
@@ -173,6 +159,7 @@
       <workItem from="1595517477058" duration="99000" />
       <workItem from="1595573679040" duration="504000" />
       <workItem from="1595574740743" duration="679000" />
+      <workItem from="1598066378447" duration="102000" />
     </task>
     <servers />
   </component>
