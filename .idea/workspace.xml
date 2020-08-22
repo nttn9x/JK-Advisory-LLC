@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aadcf3d9-1ff9-48c3-b215-911a020f5950" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +21,14 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="aasd" />
+                    <option name="lastUsedInstant" value="1598066705" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="test-1" />
+                    <option name="lastUsedInstant" value="1598066666" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="Test" />
                     <option name="lastUsedInstant" value="1598066473" />
@@ -159,7 +168,7 @@
       <workItem from="1595517477058" duration="99000" />
       <workItem from="1595573679040" duration="504000" />
       <workItem from="1595574740743" duration="679000" />
-      <workItem from="1598066378447" duration="102000" />
+      <workItem from="1598066378447" duration="328000" />
     </task>
     <servers />
   </component>
@@ -177,6 +186,10 @@
     </state>
     <state x="599" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-128.-1057.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1590057427096" />
     <state x="599" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/43.23.1637.1027@43.23.1637.1027" timestamp="1590019855618" />
+    <state x="483" y="394" key="FileDocumentManager.FileCacheConflict" timestamp="1598066606254">
+      <screen x="31" y="23" width="1649" height="1027" />
+    </state>
+    <state x="483" y="394" key="FileDocumentManager.FileCacheConflict/31.23.1649.1027@31.23.1649.1027" timestamp="1598066606254" />
     <state width="1616" height="261" key="GridCell.Tab.0.bottom" timestamp="1590595306911">
       <screen x="43" y="23" width="1637" height="1027" />
     </state>
@@ -206,7 +219,6 @@
     </state>
     <state x="419" y="-796" width="1008" height="600" key="find.popup/-128.-1057.1920.1057/31.23.1649.1027@-128.-1057.1920.1057" timestamp="1592877814883" />
     <state x="501" y="277" width="865" height="582" key="find.popup/-128.-1057.1920.1057/31.23.1649.1027@31.23.1649.1027" timestamp="1593480539319" />
-    <state x="510" y="277" width="703" height="518" key="find.popup/-128.-1057.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1589423417131" />
     <state x="501" y="277" width="865" height="582" key="find.popup/-82.-1057.1920.1057/31.23.1649.1027@31.23.1649.1027" timestamp="1595574888619" />
     <state x="501" y="277" width="865" height="582" key="find.popup/31.23.1649.1027@31.23.1649.1027" timestamp="1593786964874" />
     <state x="510" y="277" width="858" height="582" key="find.popup/43.23.1637.1027@43.23.1637.1027" timestamp="1590675952250" />
