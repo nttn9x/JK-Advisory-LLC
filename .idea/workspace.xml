@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aadcf3d9-1ff9-48c3-b215-911a020f5950" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="test-1" />
+                    <option name="lastUsedInstant" value="1598066666" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="Test" />
                     <option name="lastUsedInstant" value="1598066473" />
@@ -160,7 +163,7 @@
       <workItem from="1595517477058" duration="99000" />
       <workItem from="1595573679040" duration="504000" />
       <workItem from="1595574740743" duration="679000" />
-      <workItem from="1598066378447" duration="251000" />
+      <workItem from="1598066378447" duration="287000" />
     </task>
     <servers />
   </component>
