@@ -1,7 +1,7 @@
 export default {
   common: {
     sentiment_analysis: "NET SENTIMENT OVER TIME",
-    history_stock_price: "HISTORICAL STOCK PRICE",
+    historical_stock_price: "HISTORICAL STOCK PRICE",
     show: "Show",
     setting_suppliers: "Setting Suppliers",
     view_full: "View full",

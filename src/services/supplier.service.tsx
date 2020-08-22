@@ -23,7 +23,7 @@ export async function apiPutSupplier(data: any = {}) {
 
 export async function apiGetKeySupplierNews(params: any = {}) {
   const res: any = await callApi({
-    url: `${API_ROOT}/news/${API_MODULES.Suppliers}`,
+    url: `${API_ROOT}/news/breakingnews`,
     params,
   });
 
