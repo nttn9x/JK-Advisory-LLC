@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aadcf3d9-1ff9-48c3-b215-911a020f5950" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment-data.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.hook.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price-data.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.hook.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.fcdf6f299116d1921e71e0dd0fec0b97.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/0.9b609bb3.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/0.9b609bb3.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/1.e4337491.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/1.e4337491.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/1.e4337491.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/10.d7805392.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/10.d7805392.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/11.638a9b94.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/11.638a9b94.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/4.31adeeb7.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/4.31adeeb7.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/4.31adeeb7.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/5.1bc4b38e.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/5.1bc4b38e.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/6.eb43ac57.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/6.eb43ac57.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/7.6569a2b7.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/7.6569a2b7.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/8.def8bdfc.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/8.def8bdfc.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/8.def8bdfc.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/9.aeccb83c.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/9.aeccb83c.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.516adb00.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.516adb00.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.0817ad60.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.0817ad60.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/en.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.atom.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.atom.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/third-party-risk.atom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/third-party-risk.atom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/supplier.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/supplier.service.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1boJMojiHohnQstsoXh1Wl5n2DG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/private/third-party-risk" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/private/third-party-risk" />
+      <recent name="$PROJECT_DIR$/src/styles/icons/common" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/styles/images" />
+      <recent name="$PROJECT_DIR$/src/components/ui-own" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/private/third-party-risk" />
+      <recent name="$PROJECT_DIR$/src/pages/private/third-party-risk/key-suppliers-news" />
+      <recent name="$PROJECT_DIR$/src/assest" />
+      <recent name="$PROJECT_DIR$/src/atom" />
+      <recent name="$PROJECT_DIR$/src/components/ui-libraries" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aadcf3d9-1ff9-48c3-b215-911a020f5950" name="Default Changelist" comment="" />
+      <created>1589292467911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589292467911</updated>
+      <workItem from="1589292469688" duration="1703000" />
+      <workItem from="1589380027388" duration="1729000" />
+      <workItem from="1589422307897" duration="1343000" />
+      <workItem from="1589465326283" duration="1297000" />
+      <workItem from="1589470130663" duration="1239000" />
+      <workItem from="1589548239471" duration="12068000" />
+      <workItem from="1589813725055" duration="1557000" />
+      <workItem from="1589868023456" duration="347000" />
+      <workItem from="1589884893894" duration="625000" />
+      <workItem from="1589885752115" duration="5000" />
+      <workItem from="1589898210561" duration="7650000" />
+      <workItem from="1590017643095" duration="4512000" />
+      <workItem from="1590027544007" duration="458000" />
+      <workItem from="1590048435197" duration="1899000" />
+      <workItem from="1590057188535" duration="3152000" />
+      <workItem from="1590215714780" duration="6644000" />
+      <workItem from="1590290995756" duration="255000" />
+      <workItem from="1590589931163" duration="4067000" />
+      <workItem from="1590624329552" duration="1943000" />
+      <workItem from="1590647325614" duration="240000" />
+      <workItem from="1590674187552" duration="4978000" />
+      <workItem from="1590680305578" duration="814000" />
+      <workItem from="1590684930366" duration="315000" />
+      <workItem from="1591016541397" duration="4922000" />
+      <workItem from="1591069940852" duration="925000" />
+      <workItem from="1591102760892" duration="343000" />
+      <workItem from="1591524787264" duration="958000" />
+      <workItem from="1591528419923" duration="617000" />
+      <workItem from="1591531267295" duration="2000" />
+      <workItem from="1591531348393" duration="1583000" />
+      <workItem from="1591539193183" duration="1926000" />
+      <workItem from="1592018109621" duration="676000" />
+      <workItem from="1592018912713" duration="4645000" />
+      <workItem from="1592029109680" duration="713000" />
+      <workItem from="1592316072060" duration="547000" />
+      <workItem from="1592609670506" duration="4238000" />
+      <workItem from="1592640762056" duration="11829000" />
+      <workItem from="1592822350606" duration="11224000" />
+      <workItem from="1592877562420" duration="2241000" />
+      <workItem from="1592882122365" duration="7000" />
+      <workItem from="1592883845416" duration="514000" />
+      <workItem from="1592889624864" duration="666000" />
+      <workItem from="1592896146453" duration="887000" />
+      <workItem from="1592910368493" duration="897000" />
+      <workItem from="1592911333942" duration="5692000" />
+      <workItem from="1592966882707" duration="2020000" />
+      <workItem from="1592997871367" duration="2238000" />
+      <workItem from="1593001817828" duration="29000" />
+      <workItem from="1593012299425" duration="593000" />
+      <workItem from="1593053595767" duration="10000" />
+      <workItem from="1593242199361" duration="5320000" />
+      <workItem from="1593338589233" duration="1158000" />
+      <workItem from="1593388720865" duration="1000" />
+      <workItem from="1593403199106" duration="348000" />
+      <workItem from="1593445220916" duration="4434000" />
+      <workItem from="1593476430788" duration="6431000" />
+      <workItem from="1593528708023" duration="1180000" />
+      <workItem from="1593785471956" duration="3215000" />
+      <workItem from="1593861664328" duration="3744000" />
+      <workItem from="1594040753469" duration="963000" />
+      <workItem from="1594041775720" duration="326000" />
+      <workItem from="1594047457305" duration="41000" />
+      <workItem from="1594218361480" duration="7000" />
+      <workItem from="1595469522390" duration="671000" />
+      <workItem from="1595508851798" duration="567000" />
+      <workItem from="1595509435935" duration="5856000" />
+      <workItem from="1595517477058" duration="99000" />
+      <workItem from="1595573679040" duration="504000" />
+      <workItem from="1595574740743" duration="679000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="316" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592918985174">
+      <screen x="31" y="23" width="1649" height="1027" />
+    </state>
+    <state x="316" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/31.23.1649.1027@31.23.1649.1027" timestamp="1592918985174" />
+    <state x="326" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/43.23.1637.1027@43.23.1637.1027" timestamp="1590625004329" />
+    <state x="599" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590057427096">
+      <screen x="43" y="23" width="1637" height="1027" />
+    </state>
+    <state x="599" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-128.-1057.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1590057427096" />
+    <state x="599" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/43.23.1637.1027@43.23.1637.1027" timestamp="1590019855618" />
+    <state width="1616" height="261" key="GridCell.Tab.0.bottom" timestamp="1590595306911">
+      <screen x="43" y="23" width="1637" height="1027" />
+    </state>
+    <state width="1616" height="261" key="GridCell.Tab.0.bottom/43.23.1637.1027@43.23.1637.1027" timestamp="1590595306911" />
+    <state width="1616" height="261" key="GridCell.Tab.0.center" timestamp="1590595306910">
+      <screen x="43" y="23" width="1637" height="1027" />
+    </state>
+    <state width="1616" height="261" key="GridCell.Tab.0.center/43.23.1637.1027@43.23.1637.1027" timestamp="1590595306910" />
+    <state width="1616" height="261" key="GridCell.Tab.0.left" timestamp="1590595306910">
+      <screen x="43" y="23" width="1637" height="1027" />
+    </state>
+    <state width="1616" height="261" key="GridCell.Tab.0.left/43.23.1637.1027@43.23.1637.1027" timestamp="1590595306910" />
+    <state width="1616" height="261" key="GridCell.Tab.0.right" timestamp="1590595306911">
+      <screen x="43" y="23" width="1637" height="1027" />
+    </state>
+    <state width="1616" height="261" key="GridCell.Tab.0.right/43.23.1637.1027@43.23.1637.1027" timestamp="1590595306911" />
+    <state x="131" y="123" width="1449" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593866727747">
+      <screen x="31" y="23" width="1649" height="1027" />
+    </state>
+    <state x="131" y="123" width="1449" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog/31.23.1649.1027@31.23.1649.1027" timestamp="1593866727747" />
+    <state x="637" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593482075000">
+      <screen x="31" y="23" width="1649" height="1027" />
+    </state>
+    <state x="637" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-128.-1057.1920.1057/31.23.1649.1027@31.23.1649.1027" timestamp="1593482075000" />
+    <state x="501" y="277" width="865" height="582" key="find.popup" timestamp="1595574888619">
+      <screen x="31" y="23" width="1649" height="1027" />
+    </state>
+    <state x="419" y="-796" width="1008" height="600" key="find.popup/-128.-1057.1920.1057/31.23.1649.1027@-128.-1057.1920.1057" timestamp="1592877814883" />
+    <state x="501" y="277" width="865" height="582" key="find.popup/-128.-1057.1920.1057/31.23.1649.1027@31.23.1649.1027" timestamp="1593480539319" />
+    <state x="510" y="277" width="703" height="518" key="find.popup/-128.-1057.1920.1057/43.23.1637.1027@43.23.1637.1027" timestamp="1589423417131" />
+    <state x="501" y="277" width="865" height="582" key="find.popup/-82.-1057.1920.1057/31.23.1649.1027@31.23.1649.1027" timestamp="1595574888619" />
+    <state x="501" y="277" width="865" height="582" key="find.popup/31.23.1649.1027@31.23.1649.1027" timestamp="1593786964874" />
+    <state x="510" y="277" width="858" height="582" key="find.popup/43.23.1637.1027@43.23.1637.1027" timestamp="1590675952250" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1589596247185">
+      <screen x="43" y="23" width="1637" height="1027" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/43.23.1637.1027@43.23.1637.1027" timestamp="1589596247184" />
+    <state x="518" y="250" width="675" height="676" key="search.everywhere.popup" timestamp="1593840580904">
+      <screen x="31" y="23" width="1649" height="1027" />
+    </state>
+    <state x="518" y="250" width="675" height="676" key="search.everywhere.popup/31.23.1649.1027@31.23.1649.1027" timestamp="1593840580904" />
+    <state x="526" y="250" width="670" height="676" key="search.everywhere.popup/43.23.1637.1027@43.23.1637.1027" timestamp="1590591475766" />
+    <state x="585" y="375" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1593245188512">
+      <screen x="31" y="23" width="1649" height="1027" />
+    </state>
+    <state x="585" y="375" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/31.23.1649.1027@31.23.1649.1027" timestamp="1593245188512" />
+  </component>
+</project>
