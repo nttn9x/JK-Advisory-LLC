@@ -10,6 +10,7 @@ export enum ROUTES {
   Analytics = "/analytics",
   Setting = "/setting",
   SettingSuppliers = "/setting/suppliers",
+  Login = "/login",
 }
 
 export const SIDE_BAR = [

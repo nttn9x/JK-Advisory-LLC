@@ -6,7 +6,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Route from "./routes/index.route";
 
-import Provider from "./store/index.store";
+import Provider from "./store";
 
 import { setUpApi } from "./utils/http-interceptors/request";
 

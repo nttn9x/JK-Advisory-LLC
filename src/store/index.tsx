@@ -8,7 +8,7 @@ import React, {
 import { IContextProps } from "./types";
 
 import { asyncer } from "./middlewares";
-import mainReducer, { initialState } from "./reducer/index.reducer";
+import mainReducer, { initialState } from "./reducer";
 
 const GlobalStore = createContext({} as IContextProps<any, any>);
 

@@ -1,6 +1,6 @@
 export const API_ROOT =
   process && process.env.REACT_APP_ENV === "development"
-    ? "http://113.161.43.181:5000/api/v2"
+      ? "http://113.161.43.181:5000/api/v2"
     : "http://113.161.43.181:5000/api/v2";
 
 export const JWT_THE_KEY_OF_THE_LIFE = "dfo_v_d";

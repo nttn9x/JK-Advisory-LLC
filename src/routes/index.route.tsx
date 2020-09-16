@@ -12,7 +12,8 @@ import NewDetailProvider from "components/ui-own/new_detail/new_detail.context";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
 
-import PrivateRoute from "./private/private.component";
+import PrivateRoute from "./private";
+import PublicRoute from "./public";
 
 const Root: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const Root: React.FC = () => {
                 <LayoutApp>
                   <Suspense fallback={<ProgressLoader />}>
                     <PrivateRoute  />
+                    <PublicRoute  />
                   </Suspense>
                 </LayoutApp>
               </MuiPickersUtilsProvider>
