@@ -3,7 +3,6 @@ import { useEffect, useCallback, useState } from "react";
 import { apiGetArticle } from "services/article.service";
 
 const useDialogHook = (openDialog: boolean, id: any) => {
-
   const [localComp, setLocalComp] = useState<any>({
     data: {
       alltext: "",
@@ -23,7 +22,7 @@ const useDialogHook = (openDialog: boolean, id: any) => {
 
     let data: any = {};
     try {
-      data = await apiGetArticle({ id });
+      data = await apiGetArticle({ article_id: id });
     } catch (e) {
       console.log("Nguyen C: subcategories.component.tsx, F: e, N: error ", e);
     }

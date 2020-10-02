@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme: Theme) =>
       height: "100%",
       display: "flex",
       flexDirection: "column",
+      padding: theme.spacing(3),
     },
     grid: {
       height: "100%",

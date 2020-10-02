@@ -3,10 +3,10 @@ import { API_ROOT, API_MODULES } from "../constants/common";
 
 export async function apiGetBreakingNews(params: any = {}) {
   const res: any = await callApi({
-    url: `${API_ROOT}/news/${API_MODULES.BreakingNews}`,
+    url: `${API_ROOT}/news`,
     params,
   });
-  return res.data;
+  return res;
 }
 
 export async function apiGetBreakingNewsByNameList(data: any = {}) {
@@ -15,5 +15,5 @@ export async function apiGetBreakingNewsByNameList(data: any = {}) {
     method: "POST",
     data,
   });
-  return res.data;
+  return res;
 }

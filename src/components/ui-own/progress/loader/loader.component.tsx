@@ -2,43 +2,41 @@ import React, { useEffect, useState } from "react";
 
 import styles from "./loader.module.scss";
 
-const Circular: React.FC = () => {
-  const [isChrome, setChrome] = useState<boolean>(false);
+import { Typography } from "components/ui-libraries";
+
+interface IProp {
+  message?: string;
+}
+
+const Loader: React.FC<IProp> = React.memo(({ message }) => {
+  const [show, setShow] = useState<boolean>(false);
 
   useEffect(() => {
-    const isChrome =
-      /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    let cancel = false;
 
-    setChrome(isChrome);
+    setTimeout(() => {
+      if (!cancel) {
+        setShow(true);
+      }
+    }, 10);
+
+    return () => {
+      cancel = true;
+    };
   }, []);
-
-  if (isChrome) {
-    return (
-      <div className={styles.container}>
-        <div className={styles["loader--chrome"]}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className={styles.container}>
-      <div className={styles["loader--others"]}>
-        <div>
-          <span></span>
-        </div>
-        <div>
-          <span></span>
-        </div>
-        <div>
-          <span></span>
-        </div>
-      </div>
+      {show && (
+        <>
+          <div className={styles.loader}></div>
+          <Typography variant={"h5"} className={styles.message}>
+            {message}
+          </Typography>
+        </>
+      )}
     </div>
   );
-};
+});
 
-export default Circular;
+export default Loader;

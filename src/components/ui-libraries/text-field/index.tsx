@@ -5,8 +5,8 @@ import TextFieldUI from "@material-ui/core/TextField";
 
 const useStyles = makeStyles((theme: Theme) => ({
   labelAsterisk: {
-    color: theme.palette.error.main
-  }
+    color: theme.palette.error.main,
+  },
 }));
 
 export function TextField(props: any) {
@@ -19,19 +19,19 @@ export function TextField(props: any) {
   const { InputLabelProps, ...rest } = props;
   return (
     <TextFieldUI
-      {...rest}
       InputLabelProps={{
         ...InputLabelProps,
         classes: {
-          asterisk: classes.labelAsterisk
-        }
+          asterisk: classes.labelAsterisk,
+        },
       }}
+      {...rest}
     />
   );
 }
 
 TextField.defaultProps = {
   inputProps: {
-    maxLength: 255
-  }
+    maxLength: 255,
+  },
 };

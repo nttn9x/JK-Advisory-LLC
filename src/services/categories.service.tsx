@@ -8,5 +8,5 @@ export async function apiGetAllCategories(params: any = {}) {
     params,
   });
 
-  return res && res.data;
+  return res;
 }

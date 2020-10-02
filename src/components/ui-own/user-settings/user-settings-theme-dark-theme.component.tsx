@@ -5,7 +5,7 @@ import { Typography, Switch, FormControlLabel } from "components/ui-libraries";
 
 import Layout from "./components/subsetting-layout.component";
 import { useThemesContext } from "context/theme.context";
-import { MODE_THEME, getModeTheme } from "utils/localstorage";
+import { MODE_THEME, getModeTheme } from "utils/setting-themes";
 
 import { useTranslation } from "react-i18next";
 

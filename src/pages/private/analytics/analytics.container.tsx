@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
       height: "50vh",
       display: "flex",
       flexDirection: "column",
+      padding: theme.spacing(3)
     },
     tab: {
       flex: 1,

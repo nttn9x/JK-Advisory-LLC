@@ -1,3 +1,4 @@
+export { Autocomplete } from "./autocomplete";
 export { AppBar } from "./app-bar";
 export { Avatar } from "./avatar";
 export { Badge } from "./badge";
@@ -8,6 +9,7 @@ export { Card } from "./card";
 export { CardActionArea } from "./card-action-area";
 export { CardContent } from "./card-content";
 export { CardMedia } from "./card-media";
+export { Pagination } from "./pagination";
 export { CardHeader } from "./card-header";
 export { CardActions } from "./card-actions";
 export { Checkbox } from "./checkbox";

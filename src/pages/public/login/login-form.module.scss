@@ -1,0 +1,13 @@
+@import "src/styles/base/main";
+@import "src/styles/base/gutter";
+@import "src/styles/base/background-color";
+@import "src/styles/common/display";
+
+.title {
+  font-weight: bold;
+  margin-bottom: $gutter-base;
+}
+
+.button {
+  margin-top: 30px;
+}

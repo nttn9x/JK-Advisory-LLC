@@ -8,7 +8,10 @@ import { useTranslation } from "react-i18next";
 
 const Supplier: React.FC<any> = () => {
   const { t } = useTranslation();
-  const api: any = useCallback(() => apiGetKeySupplierNews(), []);
+  const api: any = useCallback(
+    () => apiGetKeySupplierNews({ supplier: "all", type: "insights" }),
+    []
+  );
   const { localComp, actionShowDialog } = useNewHook(api);
 
   return (

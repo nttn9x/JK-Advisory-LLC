@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from "react";
-import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
+import React, { useEffect, useState } from "react";
+import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
 import BreakingNews from "./breaking-news";
 import KeySuppliersNews from "./key-suppliers-news";
@@ -7,11 +7,11 @@ import KeySuppliersNewsFirstTab from "./key-suppliers-news-first-tab";
 import MarketAnalysis from "./market-analysis";
 import Subcategories from "./subcategories";
 import Chart from "./chart";
-import {NewDetail} from "components/ui-own";
+import { NewDetail } from "components/ui-own";
 import News from "./news";
-import {AppBar, Grid, Tab, Tabs} from "components/ui-libraries";
+import { AppBar, Grid, Tab, Tabs } from "components/ui-libraries";
 
-import {apiGetAllCategories} from "services/categories.service";
+import { apiGetAllCategories } from "services/categories.service";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       flexDirection: "column",
       height: "100%",
+      padding: theme.spacing(3),
     },
     bodyRow: {
       display: "flex",
@@ -103,6 +104,7 @@ const CategoryContainer: React.FC<any> = () => {
           tabIndex: 0,
           category_id: data.id,
           category_name: data.name,
+          chart_type: data.chart_type,
         }));
       } catch (e) {
         console.log(
@@ -123,6 +125,7 @@ const CategoryContainer: React.FC<any> = () => {
       tabIndex: newValue,
       category_id,
       category_name: data.name,
+      chart_type: data.chart_type,
     }));
   };
 
@@ -142,8 +145,8 @@ const CategoryContainer: React.FC<any> = () => {
             value={state.tabIndex}
             onChange={handleChange}
           >
-            {state.datas.map((e: any, i: number) => (
-              <Tab classes={{ root: styles.tab }} label={e.tab_name} />
+            {state.datas && state.datas.map((e: any, i: number) => (
+              <Tab key={i} classes={{ root: styles.tab }} label={e.tab_name} />
             ))}
           </Tabs>
         </AppBar>
@@ -154,14 +157,14 @@ const CategoryContainer: React.FC<any> = () => {
             <div className={styles.bodyTop}>
               <Grid className={styles.grid} container spacing={1}>
                 <Grid item xs={5}>
-                  <Chart category_name={state.category_name} />
+                  <Chart chart_type={state.chart_type} />
                 </Grid>
                 <Grid item xs={3}>
-                  <MarketAnalysis category_name={state.category_name} />
+                  <MarketAnalysis category_id={state.category_id} />
                 </Grid>
                 <Grid item xs={4}>
                   <KeySuppliersNewsFirstTab
-                    category_name={state.category_name}
+                    category_id={state.category_id}
                   />
                 </Grid>
               </Grid>

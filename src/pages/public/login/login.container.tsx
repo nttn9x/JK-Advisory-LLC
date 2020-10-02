@@ -1,45 +1,65 @@
 import React from "react";
-
-import { useOwnRedux } from "./login.store";
-
-import LoadingComponent from "../../../components/ui-own/progress/loading/loading.component";
-import FormComponent from "./login-form.component";
-import ButtonComponent from "./login-button.component";
-import LayoutComponent from "./login-layout.container";
-import { Typography } from "components/ui-libraries";
+import styles from "./login.module.scss";
 
 import { useTranslation } from "react-i18next";
+import { Redirect } from "react-router-dom";
+import { Formik } from "formik";
 
-interface ILoginProps { 
+import { ROUTES } from "constants/navigation";
+import { DefaultProgress } from "components/ui-own";
+
+import LoginSchema from "./login.yui";
+import LoginForm from "./login-form.component";
+
+import useLoginHook from "./login.hook";
+import { getUser } from "utils/auth.util";
+
+// Load before access home page, improve user experience
+import(/* webpackPrefetch: true */ "pages/private/dashboard");
+
+interface ILogin {
   history: any;
-  location: any; 
 }
 
-const Login: React.FC<ILoginProps> = ({ history }) => {
-  const { t } = useTranslation(["common"]);
-  const { isLoading, isAuth, handleLogin } = useOwnRedux(history);
+const Login: React.FC<ILogin> = ({ history }) => {
+  const user = getUser();
+  const { t } = useTranslation(["login", "common"]);
+  const { loading, onSubmit } = useLoginHook({ history });
 
-  function _renderBody(props: any) {
-    if (isLoading) {
-      return <LoadingComponent />;
-    }
-    return (
-      <React.Fragment>
-        <Typography variant="h5" color="textPrimary">
-          {t("sign_in")}
-        </Typography>
-        <FormComponent t={t} {...props} />
-        <ButtonComponent label={t("lets_go")} />
-      </React.Fragment>
-    );
+  if (user) {
+    return <Redirect to={ROUTES.Dashboard} />;
   }
 
   return (
-    <LayoutComponent
-      isAuth={isAuth}
-      renderBody={_renderBody}
-      handleLogin={handleLogin}
-    />
+    <Formik
+      initialValues={{ username: "", password: "" }}
+      validationSchema={LoginSchema}
+      onSubmit={onSubmit}
+    >
+      {({ handleSubmit, ...rest }) => {
+        return (
+          <>
+            <div className={styles.bg}></div>
+            <form
+              id={"bg-login"}
+              autoComplete="off"
+              className={styles.container}
+              onSubmit={handleSubmit}
+            >
+              <div className={styles.container__form}>
+                {loading ? (
+                  <div className={styles.loading}>
+                    <DefaultProgress message={t("common:please_wait")} />
+                  </div>
+                ) : (
+                  <LoginForm {...rest} />
+                )}
+              </div>
+            </form>
+          </>
+        );
+      }}
+    </Formik>
   );
 };
 

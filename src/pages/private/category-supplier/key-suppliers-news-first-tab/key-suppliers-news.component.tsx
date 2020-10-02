@@ -24,20 +24,17 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export async function apiGetKeySupplierNews(type: string) {
   const res: any = await callApi({
-    url: `${API_ROOT}/suppliers-news/${type}`,
+    url: `${API_ROOT}/news/?category_id=${type}&type=supplier`,
   });
 
-  return res.data;
+  return res;
 }
 
-const KeySupplierNews: React.FC<any> = ({ category_name }) => {
+const KeySupplierNews: React.FC<any> = ({ category_id }) => {
   const styles = useStyles();
   const { t } = useTranslation();
 
-  const { localComp } = useBreakingNewsHook(
-    apiGetKeySupplierNews,
-    category_name
-  );
+  const { localComp } = useBreakingNewsHook(apiGetKeySupplierNews, category_id);
 
   if (localComp.isLoading) {
     return <ProgressLoading />;

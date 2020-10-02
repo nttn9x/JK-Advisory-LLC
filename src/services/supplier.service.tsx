@@ -8,7 +8,7 @@ export async function apiGetAllSuppliers(params: any = {}) {
     params,
   });
 
-  return res.data;
+  return res;
 }
 
 export async function apiPutSupplier(data: any = {}) {
@@ -23,11 +23,11 @@ export async function apiPutSupplier(data: any = {}) {
 
 export async function apiGetKeySupplierNews(params: any = {}) {
   const res: any = await callApi({
-    url: `${API_ROOT}/news/breakingnews`,
+    url: `${API_ROOT}/news`,
     params,
   });
 
-  return res.data;
+  return res;
 }
 
 export async function apiGetThirdRiskManagements(data: any = {}) {

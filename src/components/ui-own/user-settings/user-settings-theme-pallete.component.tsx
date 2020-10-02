@@ -18,7 +18,7 @@ import {
   getSecondaryKey,
   setPrimaryColor,
   setSecondaryColor
-} from "utils/localstorage";
+} from "utils/setting-themes";
 import { TIMEOUT } from "constants/common";
 
 import { useTranslation } from "react-i18next";

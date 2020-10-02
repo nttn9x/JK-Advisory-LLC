@@ -1,0 +1,13 @@
+@import "src/styles/common/display";
+
+.container {
+  @extend %display-column;
+  @extend %justify-content-center;
+  @extend %align-items-center;
+  height: 100%;
+  width: 100%;
+}
+
+.message {
+  margin-top: 1.5em !important;
+}

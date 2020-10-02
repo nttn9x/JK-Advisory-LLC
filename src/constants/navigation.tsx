@@ -8,6 +8,7 @@ export enum ROUTES {
   SupplierManagement = "/supplier_management",
   ThirdRiskManagement = "/third-party-risk",
   Analytics = "/analytics",
+  User = "/user",
   Setting = "/setting",
   SettingSuppliers = "/setting/suppliers",
   Login = "/login",
@@ -37,6 +38,11 @@ export const SIDE_BAR = [
   {
     keyi18n: "analytics",
     linkTo: ROUTES.Analytics,
+    icon: <DashboardIcon />,
+  },
+  {
+    keyi18n: "users",
+    linkTo: ROUTES.User,
     icon: <DashboardIcon />,
   },
 ];

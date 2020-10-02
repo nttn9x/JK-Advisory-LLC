@@ -24,7 +24,10 @@ const Insights: React.FC<any> = ({ querySearch }) => {
 
     let data: any = [];
     try {
-      data = await apiGetInsights({ search_term: querySearch });
+      data = await apiGetInsights({
+        searching: querySearch,
+        type: "insights",
+      });
     } catch (e) {
       console.log("Nguyen C: subcategories.component.tsx, F: e, N: error ", e);
     }

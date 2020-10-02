@@ -1,14 +1,20 @@
 import React from "react";
 import style from "./layout.module.scss";
+import { useSelector } from "react-redux";
+import { layoutSelector } from "store/modules/layout/layout.selector";
 
-import Breadcrumbs from "components/ui-own/breadcrumbs/breadcrumbs.component";
+import classnames from "classnames";
 
-const LayoutPage: React.SFC<any> = props => {
+const LayoutPage: React.FC<any> = (props) => {
+  const layoutState = useSelector(layoutSelector);
+
   return (
-    <div className={style.layout}>
-      <Breadcrumbs gutterBottom />
-      <div className={style.layout__body} {...props} />
-    </div>
+    <div
+      className={classnames(style.layout, {
+        [style["layout--close"]]: layoutState.close,
+      })}
+      {...props}
+    ></div>
   );
 };
 

@@ -16,11 +16,11 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const MarketAnalysis: React.FC<any> = ({ category_name }) => {
+const MarketAnalysis: React.FC<any> = ({ category_id }) => {
   const styles = useStyles();
   const { t } = useTranslation();
-  const api = useCallback(() => apiGetMarketAnalysis(category_name), [
-    category_name,
+  const api = useCallback(() => apiGetMarketAnalysis(category_id), [
+    category_id,
   ]);
   const { localComp, ...rest } = useBreakingNewsHook(api);
 

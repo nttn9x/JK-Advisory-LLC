@@ -34,12 +34,12 @@ function poolColors(a: any) {
   return pool;
 }
 
-const ChartContingent: React.FC<any> = ({ category_name }) => {
+const ChartContingent: React.FC<any> = ({ chart_type }) => {
   const [localComp, setLocalComp] = useRecoilState<any>(chartContingent);
   const styles = useStyles();
 
   const fetchMyAPI = useCallback(
-    async (category_name) => {
+    async (chart_type) => {
       setLocalComp((prevState: any) => ({
         ...prevState,
         isLoading: true,
@@ -47,7 +47,7 @@ const ChartContingent: React.FC<any> = ({ category_name }) => {
 
       let data: any = {};
       try {
-        data = await apiDefaultAnalytic(category_name, 5);
+        data = await apiDefaultAnalytic(chart_type, 2);
       } catch (e) {
         console.log(
           "Nguyen C: subcategories.component.tsx, F: e, N: error ",
@@ -76,9 +76,9 @@ const ChartContingent: React.FC<any> = ({ category_name }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetchMyAPI(category_name).then();
+      fetchMyAPI(chart_type).then();
     }, 500);
-  }, [category_name, fetchMyAPI]);
+  }, [chart_type, fetchMyAPI]);
 
   if (localComp.isLoading) {
     return <ProgressLoading />;

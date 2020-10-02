@@ -1,13 +1,17 @@
 @import "styles/base/main.scss";
 
-.layout {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
+$menu-open: 240px;
+$menu-close: 52px;
+$height-appbar: 48px;
 
-  &__body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+.layout {
+  margin-top: $height-appbar;
+  height: calc(100% - #{$height-appbar});
+  margin-left: $menu-open;
+  width: calc(100% - #{$menu-open});
+
+  &--close {
+    margin-left: $menu-close;
+    width: calc(100% - #{$menu-close}) !important;
   }
 }

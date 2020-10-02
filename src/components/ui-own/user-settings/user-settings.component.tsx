@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router";
+
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-import { IconButton, Popover, Tooltip } from "components/ui-libraries";
+import { Divider, IconButton, Popover, Tooltip } from "components/ui-libraries";
 
 import { PersonIcon, SettingsIcon } from "components/ui-libraries/icons";
 
 import SettingsThemDarkTheme from "./user-settings-theme-dark-theme.component";
 import SettingsThemPallete from "./user-settings-theme-pallete.component";
 import SettingsTheme from "./user-settings-theme.component";
+import SettingsMain from "./user-settings-main.component";
 import { SETTINGS } from "./user-settings.constant";
 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../../constants/navigation";
-// import SettingsInfo from "./user-settings-info.component";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -24,11 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const UserSettings: React.FC<any> = ({
-  // authData,
-  // onLogout,
-  history,
-}) => {
+const UserSettings: React.FC<any> = () => {
   const classOwns = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
     null
@@ -100,9 +97,10 @@ const UserSettings: React.FC<any> = ({
       >
         {tabTypeSub === SETTINGS.EMPTY && (
           <>
-            {/*<SettingsInfo authData={authData} />*/}
-            {/*<Divider />*/}
+            {/*<SettingsInfo />*/}
             <SettingsTheme goToSubSetting={goToSubSetting} />
+            <Divider />
+            <SettingsMain />
           </>
         )}
         {tabTypeSub !== SETTINGS.EMPTY && getSubSetting(tabTypeSub)}

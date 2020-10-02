@@ -11,7 +11,7 @@ import { useProviderContext } from "../../../../components/ui-own/new_detail/new
 
 const BreakingNewsComp: React.FC<any> = ({ category_id }) => {
   const { t } = useTranslation();
-  const api = useCallback(() => apiGetBreakingNews({ category_id }), [
+  const api = useCallback(() => apiGetBreakingNews({ category_id, type: "breakingnews" }), [
     category_id,
   ]);
   const { localComp, ...rest } = useBreakingNewsHook(api);

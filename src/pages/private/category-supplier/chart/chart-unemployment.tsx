@@ -17,12 +17,12 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const ChartUnemployment: React.FC<any> = ({ category_name }) => {
+const ChartUnemployment: React.FC<any> = ({ chart_type }) => {
   const [localComp, setLocalComp] = useRecoilState<any>(chartUnemployment);
   const styles = useStyles();
 
   const fetchMyAPI = useCallback(
-    async (category_name) => {
+    async (chart_type) => {
       setLocalComp((prevState: any) => ({
         ...prevState,
         isLoading: true,
@@ -30,13 +30,14 @@ const ChartUnemployment: React.FC<any> = ({ category_name }) => {
 
       let data: any = {};
       try {
-        data = await apiDefaultAnalytic(category_name, 4);
+        data = await apiDefaultAnalytic(chart_type, 1);
       } catch (e) {
         console.log(
           "Nguyen C: subcategories.component.tsx, F: e, N: error ",
           e
         );
       }
+
       let datasets: any = [];
 
       if (data.y_data) {
@@ -93,9 +94,9 @@ const ChartUnemployment: React.FC<any> = ({ category_name }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetchMyAPI(category_name).then();
+      fetchMyAPI(chart_type).then();
     }, 500);
-  }, [category_name, fetchMyAPI]);
+  }, [chart_type, fetchMyAPI]);
 
   const data = useMemo(() => {
     return clone(localComp.data);

@@ -2,6 +2,8 @@ import axios from "axios";
 
 import { API_ROOT, HTTP_CODE } from "constants/common";
 
+import { getToken } from "utils/auth.util";
+
 function formatResponse(response: any): any {
   return response.data;
 }
@@ -19,6 +21,8 @@ export function formatError(error: any) {
         errors.forEach((err: any) => {
           messages.push(err.message);
         });
+      } else if (error.response.data && error.response.data.Message) {
+        messages.push(error.response.data.Message);
       } else {
         messages.push(error.response.statusText);
       }
@@ -41,7 +45,8 @@ function handleBeforeCallApi() {
   axios.interceptors.request.use(
     function (config) {
       // Do something before request is sent
-      // config.headers.Authorization = `Bearer ${getToken()}`;
+
+      config.headers.Authorization = `Bearer ${getToken()}`;
 
       return config;
     },
@@ -63,7 +68,7 @@ function handleAfterCallApi() {
     function (error: any) {
       // Any status codes that falls outside the range of 2xx cause this function to trigger
       // Do something with response error
-      return Promise.reject(error);
+      return Promise.reject(formatError(error));
     }
   );
 }
@@ -72,6 +77,7 @@ function setUpApi() {
   axios.defaults.baseURL = API_ROOT;
   axios.defaults.headers.post["Content-Type"] =
     "application/x-www-form-urlencoded";
+  axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 
   handleBeforeCallApi();
 

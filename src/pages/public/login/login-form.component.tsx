@@ -1,120 +1,97 @@
-import React, { useState } from "react";
-import styles from "./login.module.scss";
+import React, { useMemo, useState } from "react";
+import styles from "./login-form.module.scss";
+import { useTranslation } from "react-i18next";
+import classNames from "clsx";
 
 import {
-  FormControl,
-  FormHelperText,
-  Input,
+  Button,
+  Grid,
+  IconButton,
   InputAdornment,
-  IconButton
+  TextField,
+  Typography,
 } from "components/ui-libraries";
+import { useThemesContext } from "context/theme.context";
+import { VisibilityIcon, VisibilityOffIcon } from "components/icons";
 
-import {
-  MailIcon,
-  LockOpenIcon,
-  VisibilityIcon,
-  VisibilityOffIcon
-} from "components/ui-libraries/icons";
+const LoginForm = (props: any) => {
+  const { values, touched, errors, handleBlur, handleChange } = props;
+  const { t } = useTranslation(["common", "error"]);
+  const [show, setShow] = useState<boolean>(false);
+  const { isMobile } = useThemesContext();
 
-interface ILoginFormProps {
-  values: any;
-  touched: any;
-  errors: any;
-  handleBlur: any;
-  handleChange: any;
-  t: any;
-}
+  const isEmailError = useMemo(() => errors.username && touched.username, [
+    errors.username,
+    touched.username,
+  ]);
+  const isPasswordError = useMemo(() => errors.password && touched.password, [
+    errors.password,
+    touched.password,
+  ]);
 
-const LoginForm: React.FC<ILoginFormProps> = ({
-  values,
-  touched,
-  errors,
-  handleBlur,
-  handleChange,
-  t
-}) => {
-  const [showPassword, setShowPassword] = useState<Boolean>(false);
-
-  const handleClickShowPassword = () => {
-    setShowPassword(!showPassword);
+  const handleShowChange = () => {
+    setShow(!show);
   };
 
-  const handleMouseDownPassword = (
-    event: React.MouseEvent<HTMLButtonElement>
-  ) => {
-    event.preventDefault();
-  };
-
-  const isErrorUserName = touched.username && Boolean(errors.username);
-  const isErrorPassword = touched.password && Boolean(errors.password);
   return (
-    <>
-      <FormControl
-        classes={{ root: styles["login__field"] }}
-        error={isErrorUserName}
-      >
-        <Input
+    <Grid container spacing={2} direction={"column"}>
+      <Grid item xs={12} container alignItems={"center"} direction={"column"}>
+        <Typography variant={"h5"} className={styles.title} align={"center"}>
+          JK Advisory LLC
+        </Typography>
+      </Grid>
+      <Grid item>
+        <input type="text" name="username" style={{ display: "none" }} />
+        <input type="password" name="password" style={{ display: "none" }} />
+        <TextField
+          fullWidth
+          label={t("username")}
+          error={isEmailError}
+          onChange={handleChange("username")}
           value={values.username}
-          name="username"
-          inputProps={{
-            "aria-label": "username",
-            autoComplete: "new-password"
-          }}
+          helperText={isEmailError && t(`error:${errors.username}`)}
           onBlur={handleBlur}
-          onChange={handleChange}
-          placeholder={t(`username`)}
-          startAdornment={
-            <InputAdornment aria-label="User Name Icon" position="start">
-              <MailIcon color="action" />
-            </InputAdornment>
-          }
+          name={"username"}
         />
-        <FormHelperText>
-          {isErrorUserName && t(`${errors.username}`)}
-        </FormHelperText>
-      </FormControl>
-      <FormControl
-        classes={{ root: styles["login__field"] }}
-        error={Boolean(isErrorPassword)}
-      >
-        <Input
-          placeholder={t(`password`)}
-          value={values.password}
-          name="password"
-          inputProps={{
-            "aria-label": "password",
-            autoComplete: "new-password"
+      </Grid>
+      <Grid item>
+        <TextField
+          fullWidth
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleShowChange}
+                  edge="end"
+                >
+                  {show ? <VisibilityIcon /> : <VisibilityOffIcon />}
+                </IconButton>
+              </InputAdornment>
+            ),
           }}
+          error={isPasswordError}
+          label={t("password")}
+          defaultValue={values.password}
+          helperText={isPasswordError && t(`error:${errors.password}`)}
+          type={show ? "text" : "password"}
+          onChange={handleChange("password")}
           onBlur={handleBlur}
-          type={showPassword ? "text" : "password"}
-          onChange={handleChange}
-          startAdornment={
-            <InputAdornment aria-label="Password Icon" position="start">
-              <LockOpenIcon color="action" />
-            </InputAdornment>
-          }
-          endAdornment={
-            <InputAdornment position="end">
-              <IconButton
-                aria-label="Change Type Password"
-                edge="end"
-                onClick={handleClickShowPassword}
-                onMouseDown={handleMouseDownPassword}
-              >
-                {showPassword ? (
-                  <VisibilityIcon color="action" />
-                ) : (
-                  <VisibilityOffIcon color="action" />
-                )}
-              </IconButton>
-            </InputAdornment>
-          }
+          name={"password"}
         />
-        <FormHelperText>
-          {isErrorPassword && t(`${errors.password}`)}
-        </FormHelperText>
-      </FormControl>
-    </>
+      </Grid>
+      <Grid item container justify={isMobile ? "center" : "center"}>
+        <Button
+          fullWidth
+          className={classNames(styles.button)}
+          variant="contained"
+          color={"primary"}
+          type={"submit"}
+        >
+          {t("log_in")}
+        </Button>
+      </Grid>
+    </Grid>
   );
 };
 

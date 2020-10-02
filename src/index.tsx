@@ -4,15 +4,13 @@ import "./styles/index.scss";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import Route from "./routes/index.route";
-
-import Provider from "./store";
+import Route from "./routes";
 
 import { setUpApi } from "./utils/http-interceptors/request";
 
 import * as serviceWorker from "./serviceWorker";
 
-import "./i18n/i18n";
+import "./i18n";
 
 function generateUI(): void {
   const root: HTMLElement = document.createElement("div");
@@ -20,12 +18,7 @@ function generateUI(): void {
 
   document.body.append(root);
 
-  ReactDOM.render(
-    <Provider>
-      <Route />
-    </Provider>,
-    root
-  );
+  ReactDOM.render(<Route />, root);
 }
 
 function createMagic() {

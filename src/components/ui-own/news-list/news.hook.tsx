@@ -23,6 +23,7 @@ const useHook = (apiService: any) => {
       console.log("Nguyen C: subcategories.component.tsx, F: e, N: error ", e);
     }
 
+
     setLocalComp((prevState: any) => ({
       ...prevState,
       data,

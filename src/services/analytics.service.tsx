@@ -10,38 +10,35 @@ export async function apiGetAllAnalytics() {
   return res;
 }
 
-export async function apiDefaultAnalytic(category_name?: any, id?: any) {
+export async function apiDefaultAnalytic(chart_type?: any, id?: any) {
   const res: any = await callApi({
-    url: `${API_ROOT}/graphs/${category_name}`,
-    params: { id },
+    url: `${API_ROOT}/graphs`,
+    params: { chart_id: id, type: chart_type },
   });
 
-  return res.data[0];
+  return res[0];;
 }
 
 export async function apiAnalytic(id?: any) {
   const res: any = await callApi({
-    url: `${API_ROOT}/graphs/analytics`,
-    params: { id },
+    url: `${API_ROOT}/graphs/?type=analytic&chart_id=${id}`,
   });
 
-  return res.data[0];
+  return res[0];;
 }
 
 export async function apiStockPrices(supplier?: any) {
   const res: any = await callApi({
-    url: `${API_ROOT}/stockprices`,
-    params: { supplier },
+    url: `${API_ROOT}/graphs/?type=stock-price&supplier=${supplier}`,
   });
 
-  return res.data[0];
+  return res[0];
 }
 
 export async function apiSentiment(supplier?: any) {
   const res: any = await callApi({
-    url: `${API_ROOT}/sentiments`,
-    params: { supplier },
+    url: `${API_ROOT}/graphs/?type=sentiments&supplier=${supplier}`,
   });
 
-  return res.data[0];
+  return res[0];
 }

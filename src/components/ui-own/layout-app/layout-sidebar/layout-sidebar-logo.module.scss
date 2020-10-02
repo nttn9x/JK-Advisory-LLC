@@ -1,0 +1,40 @@
+@import "src/styles/base/main.scss";
+@import "src/styles/base/mixins.scss";
+@import "src/styles/base/animation/fading_entrances/fadeIn.scss";
+@import "src/styles/base/animation/fading_entrances/fadeInDown.scss";
+@import "src/styles/base/animation/sliding_entrances/slideInLeft.scss";
+
+.logo {
+  height: 54px;
+  width: 240px;
+  z-index: 2;
+  padding: 15px;
+  margin: 30px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &--close {
+    padding: 10px;
+  }
+
+  &_image {
+    width: 50px;
+    height: 50px;
+    margin-right: $gutter-container;
+    background-image: url("../../../../styles/images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.4s;
+  }
+  &_image--small {
+    width: 33px;
+    height: 33px;
+    transform: scale(1.1);
+  }
+  &_name {
+    color: $primary-color-text;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}

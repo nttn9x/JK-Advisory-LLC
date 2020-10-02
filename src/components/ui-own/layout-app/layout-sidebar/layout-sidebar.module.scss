@@ -1,0 +1,38 @@
+@import "src/styles/base/main.scss";
+@import "src/styles/base/mixins.scss";
+@import "src/styles/base/animation/fading_entrances/fadeIn.scss";
+@import "src/styles/base/animation/fading_entrances/fadeInDown.scss";
+@import "src/styles/base/animation/sliding_entrances/slideInLeft.scss";
+
+$menu-open: 240px;
+$menu-close: 52px;
+
+.drawer {
+  width: $menu-open;
+  transition: all 0.3s ease-in-out !important;
+  border-right: none !important;
+  background-color: #1e222b !important;
+  @include animated(slideInLeft);
+
+  &--close {
+    width: $menu-close;
+  }
+}
+
+.sidebar {
+  padding: 0 !important;
+  z-index: 4;
+}
+
+.sidebar_text {
+  color: #adadad;
+  white-space: nowrap;
+}
+
+.sidebar_icon {
+  color: #b1b1b1 !important;
+}
+
+.sidebar_item--selected {
+  background-color: $background-color-lv0 !important;
+}

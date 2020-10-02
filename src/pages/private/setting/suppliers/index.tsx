@@ -14,12 +14,16 @@ import {
 
 import { apiGetAllSuppliers, apiPutSupplier } from "services/supplier.service";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   container: {
     width: "30%",
-    maxHeight: 440,
+    height: "100%",
+    padding: theme.spacing(3),
+    margin: theme.spacing(3),
+    backgroundColor: theme.palette.background.paper,
+    borderRadius: 4
   },
-});
+}));
 
 const Suppliers = () => {
   const { t } = useTranslation();

@@ -1,20 +1,20 @@
-import { callApi } from "utils/service.util";
+import {callApi} from "utils/service.util";
 
-import { API_MODULES, API_ROOT } from "constants/common";
+import {API_ROOT} from "constants/common";
 
 export async function apiGetCategoryNews(params: any = {}) {
   const res: any = await callApi({
-    url: `${API_ROOT}/news/${API_MODULES.Category}`,
+    url: `${API_ROOT}/news`,
     params,
   });
 
-  return res.data;
+  return res;
 }
 
-export async function apiGetMarketAnalysis(type: any) {
+export async function apiGetMarketAnalysis(category_id: any) {
   const res: any = await callApi({
-    url: `${API_ROOT}/category-analysis/${type}`,
+    url: `${API_ROOT}/news/?category_id=${category_id}&type=market-analysis`,
   });
 
-  return res.data;
+  return [res];
 }

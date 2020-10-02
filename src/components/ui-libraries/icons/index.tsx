@@ -1,5 +1,6 @@
 export { AccountBoxIcon } from "./account-box";
 export { AccountCircleIcon } from "./account-circle";
+export { AddIcon } from "./add";
 export { AddBoxIcon } from "./add-box";
 export { AssignmentIndIcon } from "./assignment-ind";
 export { ArrowBackIcon } from "./arrow-back";

@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
       height: "100%",
+      padding: theme.spacing(3)
     },
     news: {
       height: "95%",
@@ -46,7 +47,7 @@ const Dashboard: React.FC<any> = () => {
       <NewDetail />
       <ContainerDiv className={styles.container}>
         <Grid className={styles.container} container spacing={3}>
-          <Grid item lg={2} md={4}>
+          <Grid item lg={4} md={4}>
             <FormControl fullWidth={true}>
               <InputLabel id="demo-simple-select-label">
                 {t("supplier_management")}

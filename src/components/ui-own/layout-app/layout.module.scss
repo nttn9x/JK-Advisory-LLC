@@ -1,79 +1,11 @@
-@import "styles/base/main.scss";
-@import "styles/base/mixins.scss";
-@import "styles/base/animation/fading_entrances/fadeIn.scss";
-@import "styles/base/animation/fading_entrances/fadeInDown.scss";
-@import "styles/base/animation/sliding_entrances/slideInLeft.scss";
+@import "src/styles/base/main.scss";
+@import "src/styles/base/mixins.scss";
+@import "src/styles/base/animation/fading_entrances/fadeIn.scss";
+@import "src/styles/base/animation/fading_entrances/fadeInDown.scss";
+@import "src/styles/base/animation/sliding_entrances/slideInLeft.scss";
 
 $menu-open: 240px;
 $menu-close: 52px;
-
-.header {
-  margin-left: $menu-open;
-  width: calc(100% - #{$menu-open}) !important;
-  box-shadow: none !important;
-  color: #5a5a5a !important;
-  transition: all 0.3s ease-in-out !important;
-  background-color: transparent !important;
-
-  @include animated(fadeInDown);
-
-  &--stop {
-    animation-name: unset;
-  }
-
-  &__title {
-    flex-grow: 1;
-  }
-
-  &__settings {
-    width: 30px !important;
-    height: 30px !important;
-  }
-
-  &--close {
-    margin-left: $menu-close;
-    width: calc(100% - #{$menu-close}) !important;
-  }
-  &--mobile,
-  &--setting {
-    margin-left: 0;
-    width: 100% !important;
-  }
-}
-
-.logo {
-  height: 54px;
-  width: 240px;
-  z-index: 2;
-  margin: $gutter-container;
-  position: relative;
-  display: flex;
-  align-items: center;
-  &--close {
-    margin: 10px;
-  }
-
-  &_image {
-    width: 50px;
-    height: 50px;
-    margin-right: $gutter-container;
-    background-image: url("../../../styles/images/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.4s;
-  }
-  &_image--small {
-    width: 33px;
-    height: 33px;
-    transform: scale(1.1);
-  }
-  &_name {
-    color: $primary-color-text;
-    font-weight: bold;
-    font-size: 18px;
-  }
-}
 
 .toolbar {
   padding-left: $gutter-base;
@@ -167,4 +99,9 @@ $height-appbar: 48px;
 
 .sidebar_item--selected {
   background-color: $background-color-lv0 !important;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
 }

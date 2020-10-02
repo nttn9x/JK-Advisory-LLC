@@ -1,0 +1,28 @@
+@import "src/styles/base/main.scss";
+@import "src/styles/base/mixins.scss";
+@import "src/styles/base/animation/fading_entrances/fadeIn.scss";
+@import "src/styles/base/animation/fading_entrances/fadeInDown.scss";
+@import "src/styles/base/animation/sliding_entrances/slideInLeft.scss";
+
+$menu-open: 240px;
+$menu-close: 52px;
+
+.header {
+  margin-left: $menu-open;
+  width: calc(100% - #{$menu-open}) !important;
+  box-shadow: none !important;
+  color: #5a5a5a !important;
+  transition: all 0.3s ease-in-out !important;
+  background-color: transparent !important;
+
+  @include animated(fadeInDown);
+
+  &--close {
+    margin-left: $menu-close;
+    width: calc(100% - #{$menu-close}) !important;
+  }
+}
+
+.title {
+  flex-grow: 1;
+}

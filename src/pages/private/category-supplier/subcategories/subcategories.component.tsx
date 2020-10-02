@@ -26,7 +26,7 @@ const SubCategory: React.FC<any> = ({ name, category_id }) => {
 
     let data: any = [];
     try {
-      data = await apiGetCategoryNews({ category_id });
+      data = await apiGetCategoryNews({ category_id, type: "insights" });
     } catch (e) {
       console.log("Nguyen C: subcategories.component.tsx, F: e, N: error ", e);
     }

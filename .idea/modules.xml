@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mrsthuan.iml" filepath="$PROJECT_DIR$/.idea/mrsthuan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jka-frontend.iml" filepath="$PROJECT_DIR$/.idea/jka-frontend.iml" />
     </modules>
   </component>
 </project>

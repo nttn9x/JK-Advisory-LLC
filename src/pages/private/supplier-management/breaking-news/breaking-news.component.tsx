@@ -47,7 +47,10 @@ const BreakingNews: React.FC<any> = ({ name }) => {
 
     let data: any = [];
     try {
-      data = await apiGetBreakingNews({ supplier_name });
+      data = await apiGetBreakingNews({
+        supplier: supplier_name,
+        type: "insights",
+      });
     } catch (e) {
       console.log("Nguyen C: subcategories.component.tsx, F: e, N: error ", e);
     }

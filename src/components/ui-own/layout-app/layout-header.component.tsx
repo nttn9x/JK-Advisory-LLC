@@ -1,8 +1,11 @@
 import React, { useMemo } from "react";
-import { Link } from "react-router-dom";
-import style from "./layout.module.scss";
+import style from "./layout-header.module.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
+import classnames from "classnames";
 
-import { ROUTES } from "constants/navigation";
+import { showSidebar, hideSidebar } from "store/modules/layout/layout.action";
+import { layoutSelector } from "store/modules/layout/layout.selector";
 
 import {
   AppBar,
@@ -10,15 +13,24 @@ import {
   Toolbar,
   Typography,
 } from "components/ui-libraries";
-import { SubjectIcon, ArrowBackIcon } from "components/ui-libraries/icons";
+import { SubjectIcon } from "components/ui-libraries/icons";
+
 import UserSettingsComponent from "../user-settings/user-settings.component";
 
-import { useTranslation } from "react-i18next";
-
-import classnames from "classnames";
-
-const LayoutHeader = ({ pathname, isSettingPage, isOpen, onToggle }: any) => {
+const LayoutHeader = ({ pathname }: any) => {
   const { t } = useTranslation(["common"]);
+  const dispatch = useDispatch();
+  const layoutState = useSelector(layoutSelector);
+
+  const toggleSidebar = () => {
+
+    if (layoutState.close) {
+      dispatch(showSidebar());
+    } else {
+      dispatch(hideSidebar());
+    }
+  };
+
   const name = useMemo(() => {
     const arr = pathname.split("/");
     const value = arr[arr.length - 1].split("-").join("_");
@@ -28,33 +40,18 @@ const LayoutHeader = ({ pathname, isSettingPage, isOpen, onToggle }: any) => {
 
   return (
     <AppBar
-      id="a-h-t"
-      color="default"
       classes={{
         root: classnames(style.header, {
-          [style["header--close"]]: !isOpen,
-          [style["header--setting"]]: isSettingPage,
+          [style["header--close"]]: layoutState.close,
         }),
       }}
     >
-      <Toolbar
-        variant="dense"
-        disableGutters={true}
-        classes={{ root: style.toolbar }}
-      >
-        {!isSettingPage ? (
-          <IconButton id="ico-app-menu" onClick={onToggle}>
-            <SubjectIcon />
-          </IconButton>
-        ) : (
-          <Link to={ROUTES.Dashboard}>
-            <IconButton>
-              <ArrowBackIcon />
-            </IconButton>
-          </Link>
-        )}
+      <Toolbar variant="dense" classes={{ root: style.toolbar }}>
+        <IconButton onClick={toggleSidebar} id="ico-app-menu">
+          <SubjectIcon />
+        </IconButton>
         <Typography
-          className={style.header__title}
+          className={style.title}
           variant="h6"
           color="textPrimary"
         >

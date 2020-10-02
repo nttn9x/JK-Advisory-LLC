@@ -1,18 +1,15 @@
-import React, {useEffect} from "react";
-import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
-import {useTranslation} from "react-i18next";
+import React, { useEffect } from "react";
+import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { useTranslation } from "react-i18next";
 
-import {dataList} from "atom/suppliers.atom";
-import {thirdPartyRisk} from "atom";
-import {useRecoilState} from "recoil";
+import { dataList } from "atom/suppliers.atom";
+import { thirdPartyRisk } from "atom";
+import { useRecoilState } from "recoil";
 
-import {ContainerDiv, NewDetail} from "components/ui-own";
-import {AppBar, Grid, Tab, Tabs, Typography,} from "components/ui-libraries";
+import { ContainerDiv, NewDetail } from "components/ui-own";
+import { AppBar, Grid, Tab, Tabs, Typography } from "components/ui-libraries";
 
-import {apiGetAllSuppliers} from "services/supplier.service";
-
-import BreakingNews from "./breaking-news";
-import News from "./key-suppliers-news";
+import { apiGetAllSuppliers } from "services/supplier.service";
 import ChartStockPrice from "./chart-stock-price.component";
 import ChartSentiment from "./chart-sentiment.component";
 
@@ -22,6 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
       height: "100%",
       display: "flex",
       flexDirection: "column",
+      padding: theme.spacing(3),
     },
     filter: {},
     chart: {
@@ -82,7 +80,7 @@ const ThirdPartyRisk: React.FC<any> = () => {
       }
     };
     fetchApi();
-  }, [data, setData,setSupNames]);
+  }, [data, setData, setSupNames]);
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     const supplier: any = data[newValue];
@@ -123,7 +121,11 @@ const ThirdPartyRisk: React.FC<any> = () => {
                     data.map(
                       (e: any, i: number) =>
                         !!e.active && (
-                          <Tab key={i} classes={{ root: styles.tab }} label={e.name} />
+                          <Tab
+                            key={i}
+                            classes={{ root: styles.tab }}
+                            label={e.name}
+                          />
                         )
                     )}
                 </Tabs>
@@ -141,17 +143,17 @@ const ThirdPartyRisk: React.FC<any> = () => {
             </Grid>
           </Grid>
         </div>
-        <div className={styles.data}>
-          <Grid className={styles.news} container spacing={3}>
-            <Grid item xs={10}></Grid>
-            <Grid item xs={4} className={styles.news}>
-              <BreakingNews name={state.supNames} />
-            </Grid>
-            <Grid item xs={8} className={styles.news}>
-              <News name={state.supNames} />
-            </Grid>
-          </Grid>
-        </div>
+        {/*<div className={styles.data}>*/}
+        {/*  <Grid className={styles.news} container spacing={3}>*/}
+        {/*    <Grid item xs={10}></Grid>*/}
+        {/*    <Grid item xs={4} className={styles.news}>*/}
+        {/*      <BreakingNews name={state.supNames} />*/}
+        {/*    </Grid>*/}
+        {/*    <Grid item xs={8} className={styles.news}>*/}
+        {/*      <News name={state.supNames} />*/}
+        {/*    </Grid>*/}
+        {/*  </Grid>*/}
+        {/*</div>*/}
       </ContainerDiv>
     </>
   );

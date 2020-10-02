@@ -8,7 +8,10 @@ import { useTranslation } from "react-i18next";
 
 const Category: React.FC<any> = () => {
   const { t } = useTranslation();
-  const api: any = useCallback(() => apiGetCategoryNews(), []);
+  const api: any = useCallback(
+    () => apiGetCategoryNews({ category_id: 0, type: "insights" }),
+    []
+  );
   const { localComp, actionShowDialog } = useNewHook(api);
 
   return (

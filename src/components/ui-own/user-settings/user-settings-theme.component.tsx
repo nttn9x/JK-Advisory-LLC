@@ -8,7 +8,7 @@ import {
 } from "../../ui-libraries/icons";
 
 import { SETTINGS } from "./user-settings.constant";
-import { getModeTheme } from "utils/localstorage";
+import { getModeTheme } from "utils/setting-themes";
 
 import { useTranslation } from "react-i18next";
 

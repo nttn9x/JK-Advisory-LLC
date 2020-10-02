@@ -1,7 +1,4 @@
-export const API_ROOT =
-  process && process.env.REACT_APP_ENV === "development"
-      ? "http://113.161.43.181:5000/api/v2"
-    : "http://113.161.43.181:5000/api/v2";
+export const API_ROOT = "http://113.161.43.181:5000/api";
 
 export const JWT_THE_KEY_OF_THE_LIFE = "dfo_v_d";
 
@@ -19,10 +16,14 @@ export enum API_MODULES {
   CategoryNameNews = "dashboard/category-name-news",
   KeySupplierNews = "dashboard/key-suppliers-news",
   Profile = "profiles",
+  Users = "users",
+  Organizations = "organizations",
   SupplyChain = "category-insights/supply-chain/news",
   SupplyChainBreakingNews = "category-insights/supply-chain/breakingnews",
   SupplyChainKeySupplierNews = "category-insights/supply-chain/key-suppliers-news",
 }
+
+export const SIDEBAR = "JKA_SIDEBAR";
 
 export enum KEYBOARD {
   Enter = 13,
@@ -149,3 +150,8 @@ export const SUPPLIER_MANAGEMENT = [
     name: "tyson",
   },
 ];
+
+export const COMMON_STATUS_COMPONENT = {
+  isFirstLoad: true,
+  isLoading: true,
+};
