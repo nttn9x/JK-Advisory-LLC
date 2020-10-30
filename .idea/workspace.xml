@@ -2,194 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d9af1ed-5b59-4ff0-8d4f-81fff1d6746e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jka-frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/add/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/icons/done/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-libraries/autocomplete/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-libraries/icons/add/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-libraries/pagination/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/input-search/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-sidebar/layout-sidebar-logo.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-sidebar/layout-sidebar-logo.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-sidebar/layout-sidebar.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/list-rows/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/list-rows/list-empty.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/list-rows/list-row.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/list-rows/list-rows-settings.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/list-rows/list-search/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/list-rows/list-search/search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/list-rows/list.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/progress/default/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/progress/default/loading.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/table/table.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/wrapper/dialog/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/wrapper/drawer/edit.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/wrapper/drawer/edit.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-own/wrapper/drawer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/snackbar.context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/container.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-detail/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-detail/organization-detail.hook.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-item/card/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-item/edit/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-item/edit/organization-item-form.components.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-item/edit/organization-item.validation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-item/organizaiton-item.action.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-item/organizaiton-item.constant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-item/organizaiton-item.reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-item/organizaiton-item.saga.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-list/organizaiton-list.reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-list/organization-list.action.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-list/organization-list.constant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-list/organization-list.hook.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations-module/organization-list/organization-list.saga.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations.reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations.route.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/organizations.saga.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/container.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/card/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/edit/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/edit/user-item-form-role.components.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/edit/user-item-form-user.components.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/edit/user-item-form.components.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/edit/user-item.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/edit/user-item.validation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/user-item.action.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/user-item.constant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/user-item.reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/user-item.saga.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/container.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/main/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/main/user-list.action.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/main/user-list.hook.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/user-list.constant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/user-list.reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/user-list.saga.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/user-search/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-list/user-title/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/public/login/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/public/login/login-form.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/public/login/login.hook.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/auth-router.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/auth.service.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/organizations.service.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/users.service.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/configure.store.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/constants.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/auth/auth.action.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/auth/auth.constant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/auth/auth.reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/auth/auth.selector.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/layout/layout.action.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/layout/layout.constant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/layout/layout.reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/layout/layout.selector.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/snackbar/snackbar.action.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/snackbar/snackbar.reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducer.store.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/saga.store.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/common/display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/images/man.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/images.util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/setting-themes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/theme.util.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mrsthuan.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/1.6d2f0e8c.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/1.6d2f0e8c.chunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/1.6d2f0e8c.chunk.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/1.6d2f0e8c.chunk.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/4.f71fa3ef.chunk.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/4.f71fa3ef.chunk.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.4214b8419a2928fef989130afef4bc42.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.376ca663.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.376ca663.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/0.215d37b8.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/0.215d37b8.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/1.6d2f0e8c.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/1.6d2f0e8c.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/1.6d2f0e8c.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/10.63889b1e.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/10.63889b1e.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/11.2cc2221c.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/11.2cc2221c.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/12.ce65aa96.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/12.ce65aa96.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/12.ce65aa96.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/4.f71fa3ef.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/4.f71fa3ef.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/4.f71fa3ef.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/5.f4530de6.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/5.f4530de6.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/6.9201821f.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/6.9201821f.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/7.61dce1e0.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/7.61dce1e0.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/8.460acf27.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/8.460acf27.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/8.460acf27.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/9.9c1bfc24.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/9.9c1bfc24.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.78ea4d77.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.78ea4d77.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.c86120cc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.c86120cc.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/sidebar.61c4c50e.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-libraries/icons/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-libraries/icons/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-libraries/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-libraries/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-libraries/text-field/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-libraries/text-field/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-header.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-menu/layout-menu-desktop.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-sidebar/layout-sidebar.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-menu/layout-menu-mobile.component.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout-menu/layout-menu.component.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout.hook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout.hook.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/layout-app/layout.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/layout-page/layout.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/layout-page/layout.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/layout-page/layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/layout-page/layout.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/new_detail/dialog_detail.hook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/new_detail/dialog_detail.hook.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/news-list/news.hook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/news-list/news.hook.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/progress/loader/loader.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/progress/loader/loader.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/progress/loader/loader.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/progress/loader/loader.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings-main.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings-main.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings-theme-dark-theme.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings-theme-dark-theme.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings-theme-pallete.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings-theme-pallete.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings-theme.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings-theme.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/user-settings/user-settings.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui-own/wrapper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-own/wrapper/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/common.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/common.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/model.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/model.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/auth.context.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/notification.context.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/theme.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/theme.context.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/i18n/en.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/i18n.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/analytics/analytics.container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/analytics/analytics.container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/category-supplier/breaking-news/breaking-news.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/category-supplier/breaking-news/breaking-news.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/category-supplier/category-supplier.container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/category-supplier/category-supplier.container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/category-supplier/chart/chart-contingent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/category-supplier/chart/chart-contingent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/category-supplier/chart/chart-unemployment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/category-supplier/chart/chart-unemployment.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/category-supplier/chart/chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/category-supplier/chart/chart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/category-supplier/key-suppliers-news-first-tab/key-suppliers-news.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/category-supplier/key-suppliers-news-first-tab/key-suppliers-news.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/category-supplier/market-analysis/market-analysis.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/category-supplier/market-analysis/market-analysis.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/category-supplier/subcategories/subcategories.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/category-supplier/subcategories/subcategories.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/dashboard/breaking-news/breaking-news.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/dashboard/breaking-news/breaking-news.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/dashboard/category/category.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/dashboard/category/category.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/dashboard/dashboard.container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/dashboard/dashboard.container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/dashboard/insights/insights.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/dashboard/insights/insights.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/dashboard/supplier/supplier.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/dashboard/supplier/supplier.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/setting/suppliers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/setting/suppliers/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/edit/user-item-form-user.components.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/organizations-users/users-module/user-item/edit/user-item-form-user.components.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/private/supplier-management/breaking-news/breaking-news.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/supplier-management/breaking-news/breaking-news.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/supplier-management/key-suppliers-news/key-suppliers-news.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/supplier-management/key-suppliers-news/key-suppliers-news.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/private/supplier-management/supplier-management.container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/supplier-management/supplier-management.container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/breaking-news/breaking-news.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/breaking-news/breaking-news.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.hook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-sentiment.hook.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.hook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/chart-stock-price.hook.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/key-suppliers-news/key-suppliers-news.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/key-suppliers-news/key-suppliers-news.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/private/third-party-risk/third-party-risk.container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/private/third-party-risk/third-party-risk.container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/public/login/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/public/login/login-button.component.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/public/login/login-form.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/public/login/login-form.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/public/login/login-layout.container.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/public/login/login.container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/public/login/login.container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/public/login/login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/public/login/login.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/public/login/login.store.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/public/login/login.yui.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/public/login/login.yui.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/public/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/public/public.component.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/public/public.route.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/analytics.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/analytics.service.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/public/login/login.hook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/public/login/login.hook.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/article.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/article.service.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/breaking_news.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/breaking_news.service.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/categories.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/categories.service.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/category.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/category.service.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/insight.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/insight.service.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/supplier.service.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/supplier.service.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/middlewares.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/pages/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/pages/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/auth.util.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/auth.util.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/http-interceptors/request.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/http-interceptors/request.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/localstorage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/localstorage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.path.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.paths.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +114,17 @@
       <workItem from="1601305242811" duration="2684000" />
       <workItem from="1601391456551" duration="1903000" />
       <workItem from="1601476474602" duration="879000" />
-      <workItem from="1601607268708" duration="5017000" />
+      <workItem from="1601607268708" duration="5550000" />
+      <workItem from="1601623878244" duration="2272000" />
+      <workItem from="1602042546334" duration="246000" />
+      <workItem from="1602171588797" duration="2569000" />
+      <workItem from="1602213359142" duration="803000" />
+      <workItem from="1602215034477" duration="2542000" />
+      <workItem from="1602469468429" duration="5000" />
+      <workItem from="1602486517419" duration="478000" />
+      <workItem from="1602487015019" duration="1018000" />
+      <workItem from="1602571891716" duration="21000" />
+      <workItem from="1604032942023" duration="964000" />
     </task>
     <servers />
   </component>
@@ -261,15 +140,20 @@
       <screen x="31" y="23" width="1649" height="1027" />
     </state>
     <state x="357" y="175" key="SettingsEditor/31.23.1649.1027@31.23.1649.1027" timestamp="1600594993835" />
-    <state x="504" y="277" width="858" height="582" key="find.popup" timestamp="1601619514551">
+    <state x="131" y="123" width="1215" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601623947975">
       <screen x="31" y="23" width="1649" height="1027" />
     </state>
+    <state x="131" y="123" width="1215" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog/31.23.1649.1027@31.23.1649.1027" timestamp="1601623947975" />
+    <state x="469" y="-796" width="1000" height="600" key="find.popup" timestamp="1604033272603">
+      <screen x="-82" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="469" y="-796" width="1000" height="600" key="find.popup/-82.-1057.1920.1057/31.23.1649.1027@-82.-1057.1920.1057" timestamp="1604033272603" />
     <state x="504" y="277" width="858" height="582" key="find.popup/-82.-1057.1920.1057/31.23.1649.1027@31.23.1649.1027" timestamp="1600932168950" />
-    <state x="504" y="277" width="858" height="582" key="find.popup/31.23.1649.1027@31.23.1649.1027" timestamp="1601619514551" />
-    <state x="520" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1601608047278">
+    <state x="504" y="277" width="858" height="582" key="find.popup/31.23.1649.1027@31.23.1649.1027" timestamp="1601624221967" />
+    <state x="520" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1602173424713">
       <screen x="31" y="23" width="1649" height="1027" />
     </state>
     <state x="520" y="250" width="670" height="676" key="search.everywhere.popup/-82.-1057.1920.1057/31.23.1649.1027@31.23.1649.1027" timestamp="1600941228375" />
-    <state x="520" y="250" width="670" height="676" key="search.everywhere.popup/31.23.1649.1027@31.23.1649.1027" timestamp="1601608047278" />
+    <state x="520" y="250" width="670" height="676" key="search.everywhere.popup/31.23.1649.1027@31.23.1649.1027" timestamp="1602173424713" />
   </component>
 </project>

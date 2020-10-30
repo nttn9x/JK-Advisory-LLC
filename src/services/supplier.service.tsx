@@ -33,9 +33,9 @@ export async function apiGetKeySupplierNews(params: any = {}) {
 export async function apiGetThirdRiskManagements(data: any = {}) {
   const res: any = await callApi({
     method: "POST",
-    url: `${API_ROOT}/news/${API_MODULES.Suppliers}`,
+    url: `${API_ROOT}/news/?type=insights`,
     data,
   });
 
-  return res.data;
+  return res;
 }

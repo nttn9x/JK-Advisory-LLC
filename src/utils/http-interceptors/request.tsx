@@ -3,6 +3,7 @@ import axios from "axios";
 import { API_ROOT, HTTP_CODE } from "constants/common";
 
 import { getToken } from "utils/auth.util";
+import { removeData } from "utils/auth.util";
 
 function formatResponse(response: any): any {
   return response.data;
@@ -13,7 +14,12 @@ export function formatError(error: any) {
     const status = error.response.status;
 
     const messages = [];
-    if (status === HTTP_CODE.Unauthorized) {
+    if (
+      status === HTTP_CODE.Unauthorized ||
+      status === HTTP_CODE.WrongSecretKey
+    ) {
+      removeData();
+      window.location.href = "/login";
       messages.push("Unauthorized");
     } else {
       if (error.response.data && error.response.data.errors) {

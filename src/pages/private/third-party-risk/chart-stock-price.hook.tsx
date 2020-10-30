@@ -54,7 +54,7 @@ const useChartStockPriceHook = (name: string) => {
   useEffect(() => {
     if (!name || name.length < 1) return;
 
-    fetchMyAPI(name[0]).then();
+    fetchMyAPI(name).then();
   }, [name, fetchMyAPI]);
 
   return {

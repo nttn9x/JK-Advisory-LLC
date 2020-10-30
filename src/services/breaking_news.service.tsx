@@ -1,5 +1,5 @@
 import { callApi } from "../utils/service.util";
-import { API_ROOT, API_MODULES } from "../constants/common";
+import { API_ROOT } from "../constants/common";
 
 export async function apiGetBreakingNews(params: any = {}) {
   const res: any = await callApi({
@@ -11,7 +11,7 @@ export async function apiGetBreakingNews(params: any = {}) {
 
 export async function apiGetBreakingNewsByNameList(data: any = {}) {
   const res: any = await callApi({
-    url: `${API_ROOT}/news/${API_MODULES.BreakingNews}`,
+    url: `${API_ROOT}/news/?type=breakingnews`,
     method: "POST",
     data,
   });

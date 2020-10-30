@@ -10,7 +10,6 @@ import {
   MenuItem,
   Select,
   Switch,
-  TextField,
 } from "components/ui-libraries";
 import { ContainerPaper } from "components/ui-own";
 import { useTranslation } from "react-i18next";
@@ -132,7 +131,11 @@ const UserItemFormUser: React.FC<any> = ({
           <Grid item xs={12}>
             <FormControl fullWidth>
               <InputLabel required>{t("organization")}</InputLabel>
-              <Select name={"organization_id"} value={values.organization_id} onChange={handleChange}>
+              <Select
+                name={"organization_id"}
+                value={values.organization_id}
+                onChange={handleChange}
+              >
                 {organizations.map((r: any, i: number) => {
                   return (
                     <MenuItem key={i} value={r.id}>

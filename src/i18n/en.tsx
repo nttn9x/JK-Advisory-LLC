@@ -4,6 +4,7 @@ export default {
     historical_stock_price: "HISTORICAL STOCK PRICE",
     show: "Show",
     log_in: "Log in",
+    login_failed: "Login failed",
     setting_suppliers: "Setting Suppliers",
     view_full: "View full",
     news: "News",

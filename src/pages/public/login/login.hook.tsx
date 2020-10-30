@@ -1,17 +1,17 @@
-import {useCallback, useState} from "react";
+import { useCallback, useState } from "react";
 
-import {useTranslation} from "react-i18next";
-import {useDispatch} from "react-redux";
-import {useSnackbar} from "notistack";
+import { useTranslation } from "react-i18next";
+import { useDispatch } from "react-redux";
+import { useSnackbar } from "notistack";
 
-import {SNACKBAR_TYPE} from "constants/common";
-import {ROUTES} from "constants/navigation";
+import { SNACKBAR_TYPE } from "constants/common";
+import { ROUTES } from "constants/navigation";
 
-import {setUser} from "store/modules/auth/auth.action";
+import { setUser } from "store/modules/auth/auth.action";
 
-import {login} from "services/auth.service";
+import { login } from "services/auth.service";
 
-import {getUser, setData} from "utils/auth.util";
+import { getUser, setData } from "utils/auth.util";
 
 const useLoginHook = ({ history }: any) => {
   const dispatch = useDispatch();
@@ -31,7 +31,6 @@ const useLoginHook = ({ history }: any) => {
 
         // Update auth saga
         dispatch(setUser(user));
-
 
         setTimeout(() => {
           history.push(ROUTES.Dashboard);

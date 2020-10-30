@@ -10,6 +10,9 @@ import { ContainerDiv, NewDetail } from "components/ui-own";
 import { AppBar, Grid, Tab, Tabs, Typography } from "components/ui-libraries";
 
 import { apiGetAllSuppliers } from "services/supplier.service";
+
+import BreakingNews from "./breaking-news";
+import News from "./key-suppliers-news";
 import ChartStockPrice from "./chart-stock-price.component";
 import ChartSentiment from "./chart-sentiment.component";
 
@@ -71,7 +74,7 @@ const ThirdPartyRisk: React.FC<any> = () => {
 
         if (sups && sups.length > 0) {
           setSupNames(() => ({
-            supNames: [sups[0].name],
+            supNames: sups[0].name,
             tabIndex: 0,
           }));
         }
@@ -86,7 +89,7 @@ const ThirdPartyRisk: React.FC<any> = () => {
     const supplier: any = data[newValue];
 
     setSupNames(() => ({
-      supNames: [supplier.name],
+      supNames: supplier.name,
       tabIndex: newValue,
     }));
   };
@@ -143,17 +146,17 @@ const ThirdPartyRisk: React.FC<any> = () => {
             </Grid>
           </Grid>
         </div>
-        {/*<div className={styles.data}>*/}
-        {/*  <Grid className={styles.news} container spacing={3}>*/}
-        {/*    <Grid item xs={10}></Grid>*/}
-        {/*    <Grid item xs={4} className={styles.news}>*/}
-        {/*      <BreakingNews name={state.supNames} />*/}
-        {/*    </Grid>*/}
-        {/*    <Grid item xs={8} className={styles.news}>*/}
-        {/*      <News name={state.supNames} />*/}
-        {/*    </Grid>*/}
-        {/*  </Grid>*/}
-        {/*</div>*/}
+        <div className={styles.data}>
+          <Grid className={styles.news} container spacing={3}>
+            <Grid item xs={10}></Grid>
+            <Grid item xs={4} className={styles.news}>
+              <BreakingNews name={state.supNames} />
+            </Grid>
+            <Grid item xs={8} className={styles.news}>
+              <News name={state.supNames} />
+            </Grid>
+          </Grid>
+        </div>
       </ContainerDiv>
     </>
   );

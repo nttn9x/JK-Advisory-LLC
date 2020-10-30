@@ -14,7 +14,7 @@ export const removeData = () => {
 export const getUser = () => {
   try {
     const auth: any = getItem(USER_DATA);
-
+    console.log("Nguyen C: auth.util.tsx, F: getUser, N: auth ", auth);
     if (auth && auth.access_token) {
       const user = JSON.parse(atob(auth.access_token.split(".")[1]));
 
